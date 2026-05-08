@@ -304,8 +304,8 @@ function updateConfidenceGraph(facts: Fact[], relations: Relation[]) {
 
 ZenBrain's algorithms are extracted from [ZenAI](https://zensation.ai) — a production AI platform with:
 
-- **322,000+** lines of TypeScript
-- **11,589** passing tests (ZenAI) + **276** tests (ZenBrain)
+- **440,000+** lines of TypeScript
+- **12,000+** passing tests (ZenAI) + **429** tests (ZenBrain)
 - **60** AI tools across 14 categories
 - **7-layer** HiMeS memory architecture
 - **Phase 145** of active development

@@ -6,20 +6,44 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](../../LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7+-blue.svg)](https://www.typescriptlang.org/)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2604.23878-b31b1b.svg)](https://arxiv.org/abs/2604.23878)
 
 ## What's Inside
 
-Seven battle-tested algorithms extracted from a production AI system (322K+ LOC, 11,500+ tests):
+**22 battle-tested algorithms**, extracted from a production AI platform (440K+ LOC, 12,000+ tests). Pure TypeScript, zero runtime dependencies, tree-shakeable subpath exports.
+
+### Core (12 algorithms — since v0.2.x)
 
 | Algorithm | Inspired By | What It Does |
 |-----------|------------|--------------|
 | **FSRS** | [Free Spaced Repetition Scheduler](https://github.com/open-spaced-repetition/fsrs4anki) | Optimal review scheduling — your AI never forgets what matters |
 | **Ebbinghaus** | [Ebbinghaus (1885)](https://en.wikipedia.org/wiki/Forgetting_curve) | Exponential forgetting curves with personalized decay profiles |
-| **Emotional** | [Amygdala modulation](https://en.wikipedia.org/wiki/Emotion_and_memory) (Cahill & McGaugh, 1998) | Tag memories with arousal/valence/significance — emotional memories decay 3x slower |
-| **Hebbian** | [Hebb's Rule](https://en.wikipedia.org/wiki/Hebbian_theory) (1949) | "Neurons that fire together wire together" — co-activation strengthening with homeostatic normalization |
+| **Emotional** | [Amygdala modulation](https://en.wikipedia.org/wiki/Emotion_and_memory) (Cahill & McGaugh, 1998) | Arousal/valence/significance tagging — emotional memories decay 3× slower |
+| **Hebbian** | [Hebb's Rule](https://en.wikipedia.org/wiki/Hebbian_theory) (1949) | Co-activation strengthening with homeostatic normalization |
 | **Bayesian** | [Bayesian belief propagation](https://en.wikipedia.org/wiki/Belief_propagation) | Confidence propagation through knowledge graphs |
-| **Context Retrieval** | [Encoding Specificity](https://en.wikipedia.org/wiki/Encoding_specificity_principle) (Tulving, 1973) | Context-dependent retrieval boost — memories recalled better in similar contexts |
+| **Context Retrieval** | [Encoding Specificity](https://en.wikipedia.org/wiki/Encoding_specificity_principle) (Tulving, 1973) | Context-dependent retrieval boost when contexts match |
 | **Similarity** | NLP heuristics | Negation detection (EN/DE), Jaccard similarity, text analysis |
+| **Sleep Consolidation** | Stickgold & Walker (2013) | Replay simulation — strengthens emotional/recent memories, prunes weak edges |
+| **Intervals** | Statistics | 95 % confidence intervals on retrievability and propagation |
+| **Visualization** | — | Export retention curves and FSRS schedules for charting |
+| (plus shared `types`) | — | Logger interface, common typedefs |
+
+### NeurIPS extensions (10 algorithms — new in v0.3.0)
+
+Implementations of the algorithms from [arXiv 2604.23878](https://arxiv.org/abs/2604.23878). Each is a separate sub-path import:
+
+| Algorithm | Sub-path | Paper |
+|-----------|----------|-------|
+| **Prediction-Error coupled FSRS** | `./fsrs-vmPFC` | Algorithm A |
+| **Two-Factor Synaptic Hebbian** | `./hebbian-two-factor` | Algorithm D |
+| **Simulation-Selection Sleep Loop** | `./sleep-simulation-selection` | Algorithm C |
+| **Spectral KG Health (Fiedler value)** | `./spectral-health` | Algorithm E |
+| **Information-Bottleneck Budget** | `./ib-budget` | Algorithm F |
+| **Dopamine-Modulated Routing** | `./dopamine-routing` | — |
+| **Hopfield Short-Term Memory** | `./hopfield-stm` | — |
+| **Personalized PageRank** | `./personalized-pagerank` | — |
+| **Surprise-Gradient (Variational FE) Memory** | `./surprise-gradient-memory` | — |
+| **Temporal Multi-Route Retrieval** | `./temporal-multi-route` | — |
 
 ## Quick Start
 

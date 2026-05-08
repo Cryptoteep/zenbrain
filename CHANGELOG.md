@@ -2,6 +2,16 @@
 
 All notable changes to ZenBrain are documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.1] — 2026-05-08
+
+### Documentation
+
+Cosmetic patch — no code changes. Refreshes the user-facing description and `packages/algorithms/README.md` rendered on npmjs.com so that newcomers see all 22 algorithms (incl. the 10 NeurIPS extensions added in 0.3.0) instead of the historical "seven battle-tested algorithms" snapshot.
+
+- `package.json` `description` rewritten to mention the NeurIPS extensions.
+- `packages/algorithms/README.md` "What's Inside" expanded from 7 → 22 algorithms; stats refreshed to current parent-platform totals (440K+ LOC, 12,000+ tests, 429 ZenBrain tests).
+- Root `README.md` and `docs/FAQ.md` stats brought to the same baseline.
+
 ## [0.3.0] — 2026-05-08
 
 ### NeurIPS Extensions
@@ -70,6 +80,7 @@ Adds the 9 NeurIPS algorithms promised in [arXiv 2604.23878](https://arxiv.org/a
 - Pluggable storage / embeddings / LLM providers.
 - Apache-2.0 license.
 
+[0.3.1]: https://github.com/zensation-ai/zenbrain/releases/tag/v0.3.1
 [0.3.0]: https://github.com/zensation-ai/zenbrain/releases/tag/v0.3.0
 [0.2.1]: https://github.com/zensation-ai/zenbrain/releases/tag/v0.2.1
 [0.2.0]: https://github.com/zensation-ai/zenbrain/releases/tag/v0.2.0
