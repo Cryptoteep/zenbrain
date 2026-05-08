@@ -55,6 +55,19 @@ ZenBrain brings these mechanisms to AI agents:
 
 > Mem0 raised $24M. Letta raised $10M. ZenBrain has 7 layers, they have 2-3. This is the deepest open-source memory system for AI agents.
 
+### NeurIPS extensions (v0.3.0, May 2026)
+
+On top of the 12 core algorithms above, `@zensation/algorithms@0.3.0` ships the 9 algorithms from [arXiv 2604.23878](https://arxiv.org/abs/2604.23878) plus a temporal multi-route retriever. Each is exposed as its own sub-path (`@zensation/algorithms/<name>`) and remains zero-dependency:
+
+- **`fsrs-vmPFC`** — Prediction-Error coupled FSRS (NeurIPS Algorithm A)
+- **`hebbian-two-factor`** — Two-Factor synaptic consolidation (NeurIPS Algorithm D)
+- **`sleep-simulation-selection`** — RL-based replay selection (NeurIPS Algorithm C)
+- **`spectral-health`** — Fiedler-value KG health monitor (NeurIPS Algorithm E)
+- **`ib-budget`** — Information-Bottleneck retention budget (NeurIPS Algorithm F)
+- **`dopamine-routing`** · **`hopfield-stm`** · **`personalized-pagerank`** · **`surprise-gradient-memory`** · **`temporal-multi-route`**
+
+See [`CHANGELOG.md`](./CHANGELOG.md#030--2026-05-08) for details.
+
 ## Quick Start
 
 ```bash
@@ -97,6 +110,23 @@ const stronger = computeHebbianStrengthening(1.0);
 const confidence = propagateForRelation(0.5, 0.8, 1.0, 'supports');
 // 0.9 — supporting evidence increases confidence
 ```
+
+### Want the NeurIPS extensions?
+
+```typescript
+import {
+  computeKGPredictionError,
+  computeAdaptiveFSRSInterval,
+} from '@zensation/algorithms/fsrs-vmPFC';
+
+// Couple FSRS scheduling with the prediction-error signal from your
+// knowledge graph: when the KG model is wrong about what the user knows,
+// shrink the next interval; when it's right, push it out.
+const pe = computeKGPredictionError({ predicted: 0.9, observed: 0.4 });
+const nextInterval = computeAdaptiveFSRSInterval({ baseInterval: 14, predictionError: pe });
+```
+
+Each NeurIPS algorithm has its own sub-path (`@zensation/algorithms/spectral-health`, `@zensation/algorithms/ib-budget`, …). All zero dependencies.
 
 ## The Science Behind It
 
