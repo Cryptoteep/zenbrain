@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use ZenBrain in your research or product, please cite it using the metadata below."
+title: "ZenBrain: A Neuroscience-Inspired 7-Layer Memory Architecture for Autonomous AI Systems"
+type: software
+authors:
+  - family-names: Bering
+    given-names: Alexander
+    orcid: "https://orcid.org/0009-0001-1793-012X"
+    affiliation: "Zensation AI"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19353663
+    description: "Concept DOI — resolves to the latest deposited version on Zenodo"
+repository-code: "https://github.com/zensation-ai/zenbrain"
+url: "https://github.com/zensation-ai/zenbrain"
+license: Apache-2.0
+version: 0.3.2
+date-released: 2026-05-08
+keywords:
+  - ai-memory
+  - spaced-repetition
+  - fsrs
+  - hebbian-learning
+  - emotional-memory
+  - bayesian
+  - knowledge-graph
+  - neuroscience
+  - ai-agents
+  - memory-system
+  - forgetting-curve
+  - context-dependent-retrieval
+  - typescript
+abstract: >-
+  ZenBrain is an open-source 7-layer memory system for AI agents,
+  implementing neuroscience-inspired mechanisms: spaced repetition (FSRS),
+  Hebbian learning with homeostatic normalization, Ebbinghaus forgetting
+  curves, emotional memory tagging, sleep consolidation (replay
+  simulation), Bayesian confidence propagation, and context-dependent
+  retrieval. Pure TypeScript, zero runtime dependencies for the core
+  algorithm package. v0.3.x adds 10 advanced algorithms grounded in
+  recent neuroscience and ML research.
+preferred-citation:
+  type: software
+  title: "ZenBrain: A Neuroscience-Inspired 7-Layer Memory Architecture for Autonomous AI Systems"
+  authors:
+    - family-names: Bering
+      given-names: Alexander
+      orcid: "https://orcid.org/0009-0001-1793-012X"
+  doi: 10.5281/zenodo.19353663
+  url: "https://doi.org/10.5281/zenodo.19353663"
+  year: 2026
