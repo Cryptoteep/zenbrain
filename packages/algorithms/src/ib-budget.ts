@@ -1,7 +1,7 @@
 /**
  * Context-Adaptive Information Bottleneck Budget
  *
- * NeurIPS Algorithm F
+ * 
  * Provides context-aware memory retention filtering using Information
  * Bottleneck theory, complementing the sleep consolidation cycle.
  *

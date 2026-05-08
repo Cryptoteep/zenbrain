@@ -1,7 +1,7 @@
 /**
  * Simulation-Selection Sleep Consolidation Loop
  *
- * NeurIPS Algorithm C. Extends the basic sleep consolidation from
+ * Extends the basic sleep consolidation from
  * `./sleep-consolidation` (Stickgold & Walker 2013 replay) with a novel
  * two-stage offline RL model for replay selection.
  *

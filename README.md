@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">ZenBrain</h1>
   <p align="center"><strong>The neuroscience-inspired memory system for AI agents.</strong></p>
-  <p align="center">7 memory layers. 22 neuroscience-inspired algorithms. FSRS, Hebbian, Sleep consolidation, Emotional tagging — plus 10 NeurIPS extensions (vmPFC FSRS, two-factor Hebbian, simulation-selection sleep, Fiedler-value KG health, IB budget, Hopfield STM, Personalized PageRank, ...).<br/>Pure TypeScript. Zero dependencies. 429 tests. Battle-tested in production.</p>
+  <p align="center">7 memory layers. 22 neuroscience-inspired algorithms. FSRS, Hebbian, Sleep consolidation, Emotional tagging — plus 10 advanced algorithms (vmPFC-FSRS, two-factor Hebbian, simulation-selection sleep, Fiedler-value KG health, IB budget, Hopfield STM, Personalized PageRank, ...).<br/>Pure TypeScript. Zero dependencies. 429 tests. Battle-tested in production.</p>
 </p>
 
 <p align="center">
@@ -55,15 +55,15 @@ ZenBrain brings these mechanisms to AI agents:
 
 > Mem0 raised $24M. Letta raised $10M. ZenBrain has 7 layers, they have 2-3. This is the deepest open-source memory system for AI agents.
 
-### NeurIPS extensions (v0.3.0, May 2026)
+### Advanced algorithms (v0.3.0, May 2026)
 
-On top of the 12 core algorithms above, `@zensation/algorithms@0.3.0` ships the 9 algorithms from [arXiv 2604.23878](https://arxiv.org/abs/2604.23878) plus a temporal multi-route retriever. Each is exposed as its own sub-path (`@zensation/algorithms/<name>`) and remains zero-dependency:
+On top of the 12 core algorithms above, `@zensation/algorithms@0.3.0` ships 10 advanced algorithms grounded in recent neuroscience and ML research. Each is exposed as its own sub-path (`@zensation/algorithms/<name>`) and remains zero-dependency:
 
-- **`fsrs-vmPFC`** — Prediction-Error coupled FSRS (NeurIPS Algorithm A)
-- **`hebbian-two-factor`** — Two-Factor synaptic consolidation (NeurIPS Algorithm D)
-- **`sleep-simulation-selection`** — RL-based replay selection (NeurIPS Algorithm C)
-- **`spectral-health`** — Fiedler-value KG health monitor (NeurIPS Algorithm E)
-- **`ib-budget`** — Information-Bottleneck retention budget (NeurIPS Algorithm F)
+- **`fsrs-vmPFC`** — Prediction-Error coupled FSRS
+- **`hebbian-two-factor`** — Two-Factor synaptic consolidation
+- **`sleep-simulation-selection`** — RL-based replay selection
+- **`spectral-health`** — Fiedler-value KG health monitor
+- **`ib-budget`** — Information-Bottleneck retention budget
 - **`dopamine-routing`** · **`hopfield-stm`** · **`personalized-pagerank`** · **`surprise-gradient-memory`** · **`temporal-multi-route`**
 
 See [`CHANGELOG.md`](./CHANGELOG.md#030--2026-05-08) for details.
@@ -111,7 +111,7 @@ const confidence = propagateForRelation(0.5, 0.8, 1.0, 'supports');
 // 0.9 — supporting evidence increases confidence
 ```
 
-### Want the NeurIPS extensions?
+### Want the advanced algorithms?
 
 ```typescript
 import {
@@ -126,7 +126,7 @@ const pe = computeKGPredictionError({ predicted: 0.9, observed: 0.4 });
 const nextInterval = computeAdaptiveFSRSInterval({ baseInterval: 14, predictionError: pe });
 ```
 
-Each NeurIPS algorithm has its own sub-path (`@zensation/algorithms/spectral-health`, `@zensation/algorithms/ib-budget`, …). All zero dependencies.
+Each advanced algorithm has its own sub-path (`@zensation/algorithms/spectral-health`, `@zensation/algorithms/ib-budget`, …). All zero dependencies.
 
 ## The Science Behind It
 

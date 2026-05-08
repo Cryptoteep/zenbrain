@@ -1,7 +1,7 @@
 /**
  * Two-Factor Synaptic Model for Knowledge Graph Edges
  *
- * NeurIPS Algorithm D
+ * 
  * Extends the basic Hebbian dynamics from @zensation/algorithms/hebbian
  * with a novel two-factor (weight, variance) consolidation model.
  *

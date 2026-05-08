@@ -13,7 +13,7 @@ export default defineConfig({
     intervals: 'src/intervals.ts',
     visualization: 'src/visualization.ts',
     'sleep-consolidation': 'src/sleep-consolidation.ts',
-    // NeurIPS extensions (v0.3.0)
+    // Advanced algorithms (added in v0.3.0)
     'fsrs-vmPFC': 'src/fsrs-vmPFC.ts',
     'hebbian-two-factor': 'src/hebbian-two-factor.ts',
     'sleep-simulation-selection': 'src/sleep-simulation-selection.ts',

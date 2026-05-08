@@ -1,7 +1,7 @@
 /**
  * vmPFC Prediction-Error Coupled FSRS
  *
- * NeurIPS Algorithm A
+ * 
  * Extends the FSRS scheduler from @zensation/algorithms with a novel
  * KG-derived prediction-error signal for adaptive interval scheduling.
  *

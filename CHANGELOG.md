@@ -2,36 +2,39 @@
 
 All notable changes to ZenBrain are documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.1] — 2026-05-08
+## [0.3.2] — 2026-05-08
 
-### Documentation
+### Documentation cleanup
 
-Cosmetic patch — no code changes. Refreshes the user-facing description and `packages/algorithms/README.md` rendered on npmjs.com so that newcomers see all 22 algorithms (incl. the 10 NeurIPS extensions added in 0.3.0) instead of the historical "seven battle-tested algorithms" snapshot.
+Cosmetic patch — no code changes. Removes references to a specific submission venue from public-facing surfaces (description, README, source-file headers, GitHub release notes). Algorithms themselves and their references to the underlying neuroscience literature are unchanged.
 
-- `package.json` `description` rewritten to mention the NeurIPS extensions.
-- `packages/algorithms/README.md` "What's Inside" expanded from 7 → 22 algorithms; stats refreshed to current parent-platform totals (440K+ LOC, 12,000+ tests, 429 ZenBrain tests).
-- Root `README.md` and `docs/FAQ.md` stats brought to the same baseline.
+- `package.json` `description` reworded — drops the venue-specific "extensions" framing.
+- `packages/algorithms/README.md` "What's Inside" advanced-algorithm table reworded; the second column now lists the inspiring research direction instead of a venue label.
+- Root `README.md` and `docs/FAQ.md` stats baseline retained from 0.3.1.
+- Source-file JSDoc headers reworded.
+
+(0.3.1 was tagged on GitHub but never published to npm; 0.3.2 supersedes it.)
 
 ## [0.3.0] — 2026-05-08
 
-### NeurIPS Extensions
+### Advanced algorithms
 
-Adds the 9 NeurIPS algorithms promised in [arXiv 2604.23878](https://arxiv.org/abs/2604.23878) to the open-source `@zensation/algorithms` package. Until now they only existed as references in the paper — this release ships them.
+Adds 10 advanced algorithms grounded in recent neuroscience and ML research to the open-source `@zensation/algorithms` package.
 
 **`@zensation/algorithms@0.3.0`** — 10 new algorithms (zero dependencies, pure TypeScript):
 
-| Algorithm | Sub-path | Paper |
-|---|---|---|
-| Prediction-Error Coupled FSRS | `./fsrs-vmPFC` | NeurIPS Algorithm A |
-| Two-Factor Synaptic Hebbian | `./hebbian-two-factor` | NeurIPS Algorithm D |
-| Simulation-Selection Sleep Loop | `./sleep-simulation-selection` | NeurIPS Algorithm C |
-| Spectral KG Health Monitor | `./spectral-health` | NeurIPS Algorithm E |
-| Information-Bottleneck Budget | `./ib-budget` | NeurIPS Algorithm F |
-| Dopamine-Modulated Routing | `./dopamine-routing` | — |
-| Hopfield Short-Term Memory | `./hopfield-stm` | — |
-| Personalized PageRank | `./personalized-pagerank` | — |
-| Surprise-Gradient (Variational FE) Memory | `./surprise-gradient-memory` | — |
-| Temporal Multi-Route Retrieval | `./temporal-multi-route` | — |
+| Algorithm | Sub-path |
+|---|---|
+| Prediction-Error Coupled FSRS | `./fsrs-vmPFC` |
+| Two-Factor Synaptic Hebbian | `./hebbian-two-factor` |
+| Simulation-Selection Sleep Loop | `./sleep-simulation-selection` |
+| Spectral KG Health Monitor | `./spectral-health` |
+| Information-Bottleneck Budget | `./ib-budget` |
+| Dopamine-Modulated Routing | `./dopamine-routing` |
+| Hopfield Short-Term Memory | `./hopfield-stm` |
+| Personalized PageRank | `./personalized-pagerank` |
+| Surprise-Gradient (Variational FE) Memory | `./surprise-gradient-memory` |
+| Temporal Multi-Route Retrieval | `./temporal-multi-route` |
 
 ### Tests
 - **+250 new tests** (429 total, 179 existing + 250 new). All passing on vitest.
@@ -80,7 +83,7 @@ Adds the 9 NeurIPS algorithms promised in [arXiv 2604.23878](https://arxiv.org/a
 - Pluggable storage / embeddings / LLM providers.
 - Apache-2.0 license.
 
-[0.3.1]: https://github.com/zensation-ai/zenbrain/releases/tag/v0.3.1
+[0.3.2]: https://github.com/zensation-ai/zenbrain/releases/tag/v0.3.2
 [0.3.0]: https://github.com/zensation-ai/zenbrain/releases/tag/v0.3.0
 [0.2.1]: https://github.com/zensation-ai/zenbrain/releases/tag/v0.2.1
 [0.2.0]: https://github.com/zensation-ai/zenbrain/releases/tag/v0.2.0

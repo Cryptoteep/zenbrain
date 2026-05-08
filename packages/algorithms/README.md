@@ -6,7 +6,6 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](../../LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7+-blue.svg)](https://www.typescriptlang.org/)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](#)
-[![arXiv](https://img.shields.io/badge/arXiv-2604.23878-b31b1b.svg)](https://arxiv.org/abs/2604.23878)
 
 ## What's Inside
 
@@ -28,22 +27,22 @@
 | **Visualization** | — | Export retention curves and FSRS schedules for charting |
 | (plus shared `types`) | — | Logger interface, common typedefs |
 
-### NeurIPS extensions (10 algorithms — new in v0.3.0)
+### Advanced algorithms (10 algorithms — new in v0.3.0)
 
-Implementations of the algorithms from [arXiv 2604.23878](https://arxiv.org/abs/2604.23878). Each is a separate sub-path import:
+Each is a separate sub-path import. Grounded in recent neuroscience and ML literature:
 
-| Algorithm | Sub-path | Paper |
-|-----------|----------|-------|
-| **Prediction-Error coupled FSRS** | `./fsrs-vmPFC` | Algorithm A |
-| **Two-Factor Synaptic Hebbian** | `./hebbian-two-factor` | Algorithm D |
-| **Simulation-Selection Sleep Loop** | `./sleep-simulation-selection` | Algorithm C |
-| **Spectral KG Health (Fiedler value)** | `./spectral-health` | Algorithm E |
-| **Information-Bottleneck Budget** | `./ib-budget` | Algorithm F |
-| **Dopamine-Modulated Routing** | `./dopamine-routing` | — |
-| **Hopfield Short-Term Memory** | `./hopfield-stm` | — |
-| **Personalized PageRank** | `./personalized-pagerank` | — |
-| **Surprise-Gradient (Variational FE) Memory** | `./surprise-gradient-memory` | — |
-| **Temporal Multi-Route Retrieval** | `./temporal-multi-route` | — |
+| Algorithm | Sub-path | Inspired by |
+|-----------|----------|-------------|
+| **Prediction-Error coupled FSRS** | `./fsrs-vmPFC` | Zou et al. 2025, vmPFC re-encoding |
+| **Two-Factor Synaptic Hebbian** | `./hebbian-two-factor` | Zenke et al. 2025, two-factor consolidation |
+| **Simulation-Selection Sleep Loop** | `./sleep-simulation-selection` | Frontiers Comp. Neurosci. 2025, RL replay |
+| **Spectral KG Health (Fiedler value)** | `./spectral-health` | Algebraic graph theory |
+| **Information-Bottleneck Budget** | `./ib-budget` | MemFly 2026, IB-based retention |
+| **Dopamine-Modulated Routing** | `./dopamine-routing` | Reward-modulated retrieval routing |
+| **Hopfield Short-Term Memory** | `./hopfield-stm` | Modern Hopfield networks |
+| **Personalized PageRank** | `./personalized-pagerank` | Graph propagation |
+| **Surprise-Gradient (Variational FE) Memory** | `./surprise-gradient-memory` | Free-energy principle |
+| **Temporal Multi-Route Retrieval** | `./temporal-multi-route` | Decomposed temporal queries |
 
 ## Quick Start
 

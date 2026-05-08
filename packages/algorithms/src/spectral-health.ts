@@ -1,7 +1,7 @@
 /**
  * Spectral KG Health Monitor
  *
- * NeurIPS Algorithm E
+ * 
  * Provides post-sleep consolidation quality assessment using spectral
  * graph theory (Fiedler value of the Graph Laplacian).
  *

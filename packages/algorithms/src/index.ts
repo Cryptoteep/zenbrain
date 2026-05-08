@@ -127,9 +127,9 @@ export {
   pruneWeakConnections,
 } from './sleep-consolidation';
 
-// ─── NeurIPS extensions (v0.3.0) ───────────────────────────────────────
+// ─── Advanced algorithms (v0.3.0) ───────────────────────────────────────
 
-// vmPFC Prediction-Error FSRS (NeurIPS Algorithm A)
+// vmPFC Prediction-Error FSRS ()
 export type { VmPFCConfig } from './fsrs-vmPFC';
 export {
   VMPFC_DEFAULTS,
@@ -139,7 +139,7 @@ export {
   recordNaturalRecall,
 } from './fsrs-vmPFC';
 
-// Two-Factor Synaptic Hebbian (NeurIPS Algorithm D)
+// Two-Factor Synaptic Hebbian ()
 export type { TwoFactorEdge } from './hebbian-two-factor';
 export {
   TWO_FACTOR_DEFAULTS,
@@ -151,7 +151,7 @@ export {
   fromLegacyEdge,
 } from './hebbian-two-factor';
 
-// Simulation-Selection Sleep (NeurIPS Algorithm C)
+// Simulation-Selection Sleep ()
 export type {
   AblationRegistry,
   ReplayCandidate,
@@ -167,7 +167,7 @@ export {
   selectAndApply,
 } from './sleep-simulation-selection';
 
-// Spectral KG Health (NeurIPS Algorithm E)
+// Spectral KG Health ()
 export type { SpectralReport } from './spectral-health';
 export {
   computeLaplacian,
@@ -175,7 +175,7 @@ export {
   computeSpectralHealth,
 } from './spectral-health';
 
-// Information Bottleneck Budget (NeurIPS Algorithm F)
+// Information Bottleneck Budget ()
 export type { IBEpisode } from './ib-budget';
 export {
   IB_BETA,
