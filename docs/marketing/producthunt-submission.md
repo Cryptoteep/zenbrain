@@ -12,9 +12,9 @@ Neuroscience-inspired memory for AI agents
 
 **Your AI forgets everything after every conversation. ZenBrain fixes that -- with the same mechanisms your brain uses.**
 
-ZenBrain is a 7-layer memory architecture for AI agents that implements actual neuroscience: FSRS spaced repetition (the algorithm behind Anki), Hebbian learning, sleep consolidation (memory replay simulation), emotional memory tagging, Bayesian confidence propagation, and a MemoryCoordinator that orchestrates all layers. Not a vector database with a wrapper. Actual neuroscience. 276 tests.
+ZenBrain is a 7-layer memory architecture for AI agents that implements actual neuroscience: FSRS spaced repetition (the algorithm behind Anki), Hebbian learning, sleep consolidation (memory replay simulation), emotional memory tagging, Bayesian confidence propagation, and a MemoryCoordinator that orchestrates all layers. Not a vector database with a wrapper. Actual neuroscience. 429 tests.
 
-The core algorithms are pure TypeScript with zero dependencies -- install with `npm install @zensation/algorithms` and start giving your AI real memory in minutes. Every algorithm is tree-shakeable, so you can import only what you need. Extracted from a production AI platform with 322K+ lines of code and 11,589 tests.
+The core algorithms are pure TypeScript with zero dependencies -- install with `npm install @zensation/algorithms` and start giving your AI real memory in minutes. Every algorithm is tree-shakeable, so you can import only what you need. Extracted from a production AI platform with 440K+ lines of code and 12,000+ tests.
 
 While competitors like Mem0 ($24M raised) and Letta ($10M raised) offer 2-3 memory layers, ZenBrain provides 7 specialized layers with algorithms grounded in decades of memory research. Open source under Apache 2.0, built for the community.
 
@@ -40,7 +40,7 @@ I went deep into the neuroscience literature and implemented the mechanisms the 
 
 7 memory layers from working memory to cross-context shared knowledge. Each with different retention, consolidation, and retrieval rules -- just like the human brain.
 
-The monorepo ships 4 packages: `@zensation/algorithms` (12 algorithm modules), `@zensation/core` (7 memory layers + MemoryCoordinator), `@zensation/adapter-postgres` (pgvector), and `@zensation/adapter-sqlite` (zero-config). Docker Compose included. 276 tests. Everything is Apache 2.0.
+The monorepo ships 4 packages: `@zensation/algorithms` (22 algorithm modules), `@zensation/core` (7 memory layers + MemoryCoordinator), `@zensation/adapter-postgres` (pgvector), and `@zensation/adapter-sqlite` (zero-config). Docker Compose included. 429 tests. Everything is Apache 2.0.
 
 I'd love to hear how you'd use this in your AI projects. Happy to answer any questions about the neuroscience or the implementation!
 

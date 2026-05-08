@@ -2,7 +2,7 @@
 
 ## Title
 
-Show HN: ZenBrain -- Neuroscience-Inspired Memory for AI Agents (7 layers, sleep consolidation, 276 tests)
+Show HN: ZenBrain -- Neuroscience-Inspired Memory for AI Agents (7 layers, sleep consolidation, 429 tests)
 
 ## URL
 
@@ -12,7 +12,7 @@ https://github.com/zensation-ai/zenbrain
 
 Hi HN, Alexander here, solo dev from Kiel, Germany.
 
-I've been building a production AI platform for the past year (322K+ LOC, 11,589 tests). The hardest problem was always memory: how do you make an AI that actually remembers things in a way that's useful, not just a vector database that returns the top-k nearest neighbors?
+I've been building a production AI platform for the past year (440K+ LOC, 12,000+ tests). The hardest problem was always memory: how do you make an AI that actually remembers things in a way that's useful, not just a vector database that returns the top-k nearest neighbors?
 
 I went deep into the neuroscience literature and implemented the actual mechanisms the human brain uses for memory:
 
@@ -56,7 +56,7 @@ All of this is pure TypeScript with zero runtime dependencies. Everything is tre
 npm install @zensation/algorithms @zensation/core
 ```
 
-I extracted the algorithms from my production system and open-sourced them. The monorepo ships 4 packages: `@zensation/algorithms` (12 algorithm modules), `@zensation/core` (7 memory layers + coordinator), `@zensation/adapter-postgres` (pgvector), and `@zensation/adapter-sqlite` (zero-config). 276 tests, all passing. Docker Compose included for quick self-hosting.
+I extracted the algorithms from my production system and open-sourced them. The monorepo ships 4 packages: `@zensation/algorithms` (22 algorithm modules), `@zensation/core` (7 memory layers + coordinator), `@zensation/adapter-postgres` (pgvector), and `@zensation/adapter-sqlite` (zero-config). 429 tests, all passing. Docker Compose included for quick self-hosting.
 
 Compared to Mem0 ($24M raised) and Letta ($10M raised) -- they have 2-3 memory layers and none of this neuroscience machinery. I'm not saying funding is bad, but I think the open-source community deserves a deeper approach to AI memory than "vector store + LLM summarization."
 

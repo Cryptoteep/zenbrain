@@ -14,7 +14,7 @@ Today I'm open-sourcing ZenBrain: 7-layer memory for AI agents.
 
 FSRS, Hebbian learning, sleep consolidation, emotional tagging.
 
-276 tests. Zero dependencies. Pure TypeScript.
+429 tests. Zero dependencies. Pure TypeScript.
 
 ---
 
@@ -48,7 +48,7 @@ Each with different retention, consolidation, and retrieval rules.
 
 **Tweet 4 (Algorithms)**
 
-12 algorithms that power it:
+22 algorithms (12 core + 10 advanced) that power it:
 
 - FSRS spaced repetition (30% better than SM-2)
 - Hebbian learning (fire together, wire together)
@@ -65,7 +65,7 @@ Each with different retention, consolidation, and retrieval rules.
 Mem0 raised $24M. 2 memory layers.
 Letta raised $10M. 3 memory layers.
 
-ZenBrain: 7 layers, 12 algorithms, sleep consolidation, MemoryCoordinator, 276 tests.
+ZenBrain: 7 layers, 22 algorithms, sleep consolidation, MemoryCoordinator, 429 tests.
 
 Apache 2.0. Zero dependencies. Free forever.
 
@@ -89,7 +89,7 @@ import { selectForReplay } from '@zensation/algorithms/sleep-consolidation'
 
 **Tweet 7 (Links + CTA)**
 
-Extracted from a production AI platform (322K+ LOC, 11,589 tests). 276 ZenBrain tests. Battle-tested, not theoretical.
+Extracted from a production AI platform (440K+ LOC, 12,000+ tests). 429 ZenBrain tests. Battle-tested, not theoretical.
 
 GitHub: github.com/zensation-ai/zenbrain
 npm: npmjs.com/package/@zensation/algorithms

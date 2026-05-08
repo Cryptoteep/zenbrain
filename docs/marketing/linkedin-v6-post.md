@@ -37,7 +37,7 @@ Key results remain strong:
 Paper (open access): https://doi.org/10.5281/zenodo.19353663
 Source code: https://github.com/zensation-ai/zenbrain
 
-Built in Kiel, Germany. 11,607 tests. 322K lines of code. Open source.
+Built in Kiel, Germany. 12,000+ tests. 440K+ lines of code. Open source.
 
 #AI #MachineLearning #Neuroscience #MemoryArchitecture #OpenSource #Research #AIResearch #CognitiveComputing #ZenBrain
 
