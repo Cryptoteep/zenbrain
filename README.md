@@ -26,6 +26,34 @@
   <img src="docs/demo.gif" alt="ZenBrain Playground Demo" width="700"/>
 </p>
 
+<details>
+<summary><strong>📄 Paper & Citation</strong> — ZenBrain: A Neuroscience-Inspired 7-Layer Memory Architecture for Autonomous AI Systems</summary>
+
+<br/>
+
+- **arXiv preprint** (cs.AI): [arxiv.org/abs/2604.23878](https://arxiv.org/abs/2604.23878)
+- **Open-access archive** (Zenodo / CERN): [doi.org/10.5281/zenodo.19353663](https://doi.org/10.5281/zenodo.19353663)
+- **Reproducibility artifacts** (Zenodo): [doi.org/10.5281/zenodo.19481262](https://doi.org/10.5281/zenodo.19481262)
+- **ORCID**: [0009-0001-1793-012X](https://orcid.org/0009-0001-1793-012X)
+- **License**: CC BY 4.0 (paper) · Apache-2.0 (code)
+
+```bibtex
+@misc{bering2026zenbrain,
+  title         = {ZenBrain: A Neuroscience-Inspired 7-Layer Memory Architecture for Autonomous AI Systems},
+  author        = {Bering, Alexander},
+  year          = {2026},
+  eprint        = {2604.23878},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  doi           = {10.5281/zenodo.19353663},
+  url           = {https://arxiv.org/abs/2604.23878}
+}
+```
+
+Feedback, replications, and counter-results are explicitly welcome — please open an issue or reach out via [research@zensation.ai](mailto:research@zensation.ai).
+
+</details>
+
 > **Your AI forgets everything after every conversation.** ZenBrain fixes that — with the same mechanisms your brain uses: spaced repetition, emotional consolidation, Hebbian strengthening, and exponential forgetting curves. Not a vector database with a wrapper. Actual neuroscience.
 
 ---
