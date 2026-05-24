@@ -56,9 +56,9 @@ console.log('2. Emotional Memory');
 console.log('───────────────────');
 
 const texts = [
-  'I just got promoted to Senior Engineer!',
+  'I am absolutely thrilled — I got the promotion!',
   'The weather is nice today.',
-  'My grandmother passed away last week.',
+  'I am so anxious and scared about the surgery tomorrow.',
   'I need to buy groceries.',
 ];
 
