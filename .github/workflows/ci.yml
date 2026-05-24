@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install --no-package-lock
+      - run: npm ci
 
       # Build in dependency order (algorithms first — core and adapters depend on it)
       - name: Build algorithms
@@ -67,7 +67,7 @@ jobs:
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
-      - run: npm install
+      - run: npm ci
       - run: cd packages/algorithms && npm run build
       - run: cd packages/core && npm run build
       # Idempotent: only publish a version that is not already on the registry,
