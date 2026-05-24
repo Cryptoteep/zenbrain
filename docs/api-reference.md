@@ -208,6 +208,146 @@ Generate FSRS scheduling timeline from a simulated grade sequence.
 
 ---
 
+### Similarity
+
+```typescript
+import {
+  detectNegation,
+  computeStringSimilarity,
+  stripNegation,
+  safeJsonParse,
+} from '@zensation/algorithms/similarity';
+```
+
+#### `detectNegation(text): NegationResult`
+Detect negation and extract its target (English & German).
+
+#### `computeStringSimilarity(a, b): number`
+Jaccard word-overlap similarity (0–1).
+
+#### `stripNegation(text): string`
+Remove negation words from text.
+
+#### `safeJsonParse<T>(json, fallback, logger?): T`
+Parse JSON, returning `fallback` on any error.
+
+---
+
+## Advanced Algorithms (v0.3)
+
+Ten additional algorithms grounded in recent neuroscience and ML literature.
+Each is a separate **zero-dependency subpath export** (`@zensation/algorithms/<name>`)
+and, like the core modules, exposes pure functions.
+
+### Prediction-Error Coupled FSRS — `./fsrs-vmPFC`
+
+#### `computeKGPredictionError(lastEmbedding, currentEmbedding): number`
+Cosine-distance prediction error between a memory's embedding at its last review and now (both arrays must be the same length).
+
+#### `computeReEncodingFactor(predictionError, config?): number`
+Map a prediction error to a re-encoding factor.
+
+#### `computeAdaptiveFSRSInterval(baseInterval, kgPredictionError, config?): number`
+Shrink the next FSRS interval when prediction error is high, extend it when low.
+
+### Two-Factor Synaptic Hebbian — `./hebbian-two-factor`
+
+#### `createTwoFactorEdge(u, r, v, initialWeight?, initialVariance?): TwoFactorEdge`
+Create a (subject, relation, object) edge carrying both a weight and a variance.
+
+#### `hebbianUpdateTwoFactor(edge, tagScore, activationProduct, config?): TwoFactorEdge`
+Update an edge from a co-activation event using the two-factor rule.
+
+#### `getImportance(edge): number`
+Importance score used for consolidation and protection.
+
+#### `computeEWCPenalty(edge, proposedWeight, lambda?): number`
+Elastic-weight-consolidation penalty for changing a stable, important edge.
+
+#### `decayTwoFactor(edge, baseDecayRate): TwoFactorEdge`
+Importance-weighted decay (important edges decay more slowly).
+
+### Simulation-Selection Sleep — `./sleep-simulation-selection`
+
+#### `generateReplayCandidates(realEpisodes, counterfactualPaths): ReplayCandidate[]`
+Build the replay candidate set from real and counterfactual episodes.
+
+#### `selectAndApply(candidates, config?, ablationRegistry?): SelectionResult[]`
+Score candidates and apply the selected replays.
+
+#### `runSimulationSelectionCycle(realEpisodes, counterfactualPaths, config?, ablationRegistry?): SleepCycleResult`
+Run a full simulation-selection sleep cycle.
+
+### Spectral KG Health (Fiedler value) — `./spectral-health`
+
+#### `computeFiedlerValue(adjacency): number`
+Second-smallest Laplacian eigenvalue (algebraic connectivity) of the knowledge graph.
+
+#### `computeSpectralHealth(adjacency, previousFiedlerValue): SpectralReport`
+Health report comparing current connectivity against a previous Fiedler value.
+
+### Information-Bottleneck Budget — `./ib-budget`
+
+#### `ibShouldRetain(compressionCost, relevanceGain, context): boolean`
+Retention decision under an Information-Bottleneck trade-off.
+
+#### `estimateCompressionCost(contentLength, uniqueEntityCount, embeddingVariance): number`
+Estimate the cost of storing an item.
+
+#### `estimateRelevanceGain(retrievalCount, avgConfidence, recency): number`
+Estimate the relevance gain of keeping an item.
+
+#### `ibFilterEpisodes(episodes, context): IBEpisode[]`
+Filter a set of episodes against the retention budget.
+
+### Dopamine-Modulated Routing — `./dopamine-routing`
+
+#### `routeRetrieval(query, options?, context?): DifficultySignal`
+Estimate query difficulty and route retrieval accordingly (reward-modulated).
+
+### Hopfield Short-Term Memory — `./hopfield-stm`
+
+#### `hopfieldRecall(query, patterns, options?): HopfieldRecallResult`
+Modern (continuous) Hopfield associative recall over stored patterns.
+
+#### `hopfieldEnergy(state, patterns, beta): number`
+Energy of a state given the stored patterns.
+
+#### `topKHopfieldMatches(result, k, minWeight?)`
+Top-k matches from a recall result.
+
+### Personalized PageRank — `./personalized-pagerank`
+
+#### `personalizedPageRank(graph, seedNodes, options?): PPRResult`
+Personalized PageRank from seed nodes over a weighted graph.
+
+#### `topKByPageRank(result, k, options?)`
+Top-k nodes by PageRank score.
+
+### Surprise-Gradient (Variational Free Energy) Memory — `./surprise-gradient-memory`
+
+#### `updateVFEDelta(currentDelta, observation, options?): number`
+Update a memory's variational-free-energy delta from a new observation.
+
+#### `applyVFERetrievalBoost(baseScore, vfeDelta, options?): number`
+Boost a retrieval score by surprise (VFE delta).
+
+#### `applyVFEIntervalShrink(baseInterval, vfeDelta, options?): number`
+Shrink the encoding interval for surprising items.
+
+### Temporal Multi-Route Retrieval — `./temporal-multi-route`
+
+#### `decomposeTemporalQuery(query): DecomposedTemporalQuery`
+Split a temporal query into parallel retrieval routes.
+
+#### `fuseRoutes(routeResults, options?): FusedHit[]`
+Fuse and rank results from multiple routes.
+
+#### `runTemporalMultiRoute(query, runner, options?)`
+Decompose a query, run each route via the supplied `runner`, and fuse the results.
+
+---
+
 ## @zensation/core
 
 ### MemoryCoordinator

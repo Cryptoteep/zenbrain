@@ -2,69 +2,81 @@
 
 ## Vision
 
-ZenBrain aims to be the standard memory layer for AI agents — the way pgvector is for embeddings and LangChain is for LLM orchestration.
+ZenBrain aims to be a dependable, scientifically grounded memory layer for AI
+agents — small enough to drop into any project, complete enough to run a full
+seven-layer memory system. Development is self-funded and proceeds without
+external deadlines; the items below are directions, not dated commitments.
 
-## Current: v0.1 (March 2026)
+## Released
 
-**Released.** Foundation packages with 7-layer architecture.
+### v0.3 — Advanced algorithms (May 2026)
 
-- `@zensation/algorithms` — 9 neuroscience algorithms (FSRS, Hebbian, Ebbinghaus, Emotional, Bayesian, Context Retrieval, Sleep Consolidation, Confidence Intervals, Visualization)
-- `@zensation/core` — 7 memory layers + MemoryCoordinator
-- `@zensation/adapter-postgres` — PostgreSQL + pgvector
-- `@zensation/adapter-sqlite` — SQLite (zero-config)
-- 5 integration examples (Claude, LangChain, CrewAI, Vercel AI, basic)
+- `@zensation/algorithms@0.3.x` — 10 advanced algorithms added on top of the 12
+  core ones (**22 total**), each a zero-dependency subpath export: prediction-error
+  coupled FSRS (`fsrs-vmPFC`), two-factor synaptic Hebbian, simulation-selection
+  sleep, spectral (Fiedler-value) KG health, Information-Bottleneck budget,
+  dopamine-modulated routing, Hopfield STM, Personalized PageRank,
+  surprise-gradient memory, temporal multi-route retrieval.
+- **429 tests** in the algorithms package (dual ESM + CJS + type declarations).
+
+### v0.2 — Coordinator, consolidation, packaging (March–May 2026)
+
+- `@zensation/core@0.2.x` — `MemoryCoordinator` orchestrating all seven layers
+  (auto-routing `store()`, cross-layer `recall()`, `consolidate()`, `decay()`,
+  FSRS review queue).
+- Sleep Consolidation, 95% confidence intervals, and retention-curve
+  visualization added to `@zensation/algorithms`.
+- Reliable dual ESM/CJS builds (migrated to `tsup`); packaging fixes.
+
+### v0.1 — Foundation (March 2026)
+
+- Initial public release: the 7-layer memory architecture and 12 core
+  neuroscience-inspired algorithms (FSRS, Ebbinghaus, Hebbian, Bayesian,
+  emotional, context-retrieval, similarity, intervals, visualization,
+  sleep-consolidation, shared types).
+- Pluggable storage / embedding / LLM provider interfaces; Apache-2.0.
 
 ---
 
-## Near-Term: v0.2 (April 2026)
+## Planned / Exploratory
 
-**Focus: Developer Experience + Adapters**
+These are candidate directions under consideration. They are not scheduled and
+may change or be dropped based on evidence and contributor interest.
 
-- [ ] Redis adapter (caching layer with TTL)
-- [ ] OpenAI embedding adapter (built-in OpenAI integration)
-- [ ] Anthropic Claude adapter (LLM provider)
-- [ ] `MemoryCoordinator` enhancements (auto-consolidation scheduler, background decay)
-- [ ] CLI tool: `npx zenbrain init` for project scaffolding
-- [ ] Improved InMemoryStorage for testing (better SQL parsing)
-- [ ] Performance benchmarks with automated CI tracking
+**Adapters & integration**
+- Additional storage adapters (e.g. Redis caching layer).
+- Built-in embedding/LLM provider adapters (currently bring-your-own interface).
+- `npx zenbrain init` project scaffolding.
 
-## Mid-Term: v0.3 (Q2 2026)
+**Algorithms & scale**
+- Graph-aware retrieval that combines Hebbian edges with semantic search.
+- Batch FSRS scheduling for large fact sets.
+- Episodic memory compression (summarize older episodes).
+- Event-driven consolidation (trigger sleep cycles on inactivity).
 
-**Focus: Intelligence + Scale**
+**Reproducibility & evaluation**
+- A reproducible, comparative benchmark suite against other open-source memory
+  systems, with published methodology and raw results.
+- Automated performance tracking in CI.
 
-- [ ] Multi-model embedding support (switch models without re-embedding)
-- [ ] Batch FSRS scheduling (optimize 10K+ facts at once)
-- [ ] Graph-based retrieval (combine Hebbian edges with semantic search)
-- [ ] Memory compression (summarize old episodic memories to save storage)
-- [ ] Event-driven consolidation (auto-trigger sleep cycles based on inactivity)
-- [ ] Streaming API for real-time memory updates
-- [ ] Python bindings (PyPI package)
-
-## Long-Term: v1.0 (Q3-Q4 2026)
-
-**Focus: Production + Enterprise**
-
-- [ ] Federated memory (sync across agents/devices)
-- [ ] Memory encryption at rest (AES-256 field-level)
-- [ ] Multi-tenant isolation (namespace-based separation)
-- [ ] Memory analytics dashboard (retention curves, knowledge gaps)
-- [ ] Plugin system (custom layers, algorithms, adapters)
-- [ ] Benchmark suite vs Mem0, Letta, Zep
-- [ ] Kubernetes operator for production deployments
+**Production**
+- Memory encryption at rest and multi-tenant namespace isolation.
+- Federated memory (sync across agents/devices).
 
 ---
 
 ## How to Influence the Roadmap
 
-- **Vote on issues**: Use thumbs-up on [GitHub Issues](https://github.com/zensation-ai/zenbrain/issues) to signal priority
-- **Propose features**: Open an issue with the `enhancement` label
-- **Contribute**: PRs that align with the roadmap are prioritized for review
-- **Discuss**: Join our [Discord](https://discord.gg/YKVTHaXK) to discuss direction
+- **Open an issue** describing a use case or proposing a feature.
+- **Upvote** existing issues to signal priority.
+- **Contribute** — PRs that align with the directions above are prioritized for
+  review. See [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Philosophy
 
-We prioritize in this order:
-1. **Correctness** — algorithms must be scientifically accurate
-2. **Simplicity** — APIs should be intuitive, not clever
-3. **Performance** — optimize for real workloads, not benchmarks
-4. **Compatibility** — don't break existing users
+We prioritize, in this order:
+
+1. **Correctness** — algorithms must be scientifically defensible and tested.
+2. **Simplicity** — APIs should be intuitive, not clever.
+3. **Performance** — optimize for real workloads, not microbenchmarks.
+4. **Compatibility** — avoid breaking existing users; follow semver.
