@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">ZenBrain</h1>
   <p align="center"><strong>The neuroscience-inspired memory system for AI agents.</strong></p>
-  <p align="center">7 memory layers. 22 neuroscience-inspired algorithms. FSRS, Hebbian, Sleep consolidation, Emotional tagging — plus 10 advanced algorithms (vmPFC-FSRS, two-factor Hebbian, simulation-selection sleep, Fiedler-value KG health, IB budget, Hopfield STM, Personalized PageRank, ...).<br/>Pure TypeScript. Zero dependencies. 528 tests. Battle-tested in production.</p>
+  <p align="center">7 memory layers. 22 neuroscience-inspired algorithms. FSRS, Hebbian, Sleep consolidation, Emotional tagging — plus 10 advanced algorithms (vmPFC-FSRS, two-factor Hebbian, simulation-selection sleep, Fiedler-value KG health, IB budget, Hopfield STM, Personalized PageRank, ...).<br/>Pure TypeScript. Zero dependencies. 528 tests. Extracted from a production AI platform.</p>
 </p>
 
 <p align="center">

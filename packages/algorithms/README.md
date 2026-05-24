@@ -9,7 +9,7 @@
 
 ## What's Inside
 
-**22 battle-tested algorithms**, extracted from a production AI platform (440K+ LOC, 12,000+ tests). Pure TypeScript, zero runtime dependencies, tree-shakeable subpath exports.
+**22 neuroscience-inspired algorithms**, extracted from a production AI platform and published as standalone, dependency-free modules. Pure TypeScript, zero runtime dependencies, tree-shakeable subpath exports, 429 tests.
 
 ### Core (12 algorithms — since v0.2.x)
 
