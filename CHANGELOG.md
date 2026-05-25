@@ -26,10 +26,10 @@ No code changes; doc fix only.
 
 ### Documentation cleanup
 
-Cosmetic patch — no code changes. Removes references to a specific submission venue from public-facing surfaces (description, README, source-file headers, GitHub release notes). Algorithms themselves and their references to the underlying neuroscience literature are unchanged.
+Cosmetic patch — no code changes. Reworded some user-facing text (description, README, source-file headers) for a cleaner, self-contained open-source presentation. Algorithms themselves and their references to the underlying neuroscience literature are unchanged.
 
-- `package.json` `description` reworded — drops the venue-specific "extensions" framing.
-- `packages/algorithms/README.md` "What's Inside" advanced-algorithm table reworded; the second column now lists the inspiring research direction instead of a venue label.
+- `package.json` `description` reworded.
+- `packages/algorithms/README.md` "What's Inside" advanced-algorithm table reworded; the second column now lists each algorithm's inspiring research direction.
 - Root `README.md` and `docs/FAQ.md` stats baseline retained from 0.3.1.
 - Source-file JSDoc headers reworded.
 
