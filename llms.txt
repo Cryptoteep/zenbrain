@@ -1,0 +1,47 @@
+# ZenBrain
+
+> Neuroscience-inspired, zero-dependency memory system for AI agents. Implements
+> spaced repetition (FSRS), Hebbian learning, Ebbinghaus forgetting curves,
+> emotional memory tagging, sleep consolidation, and Bayesian confidence
+> propagation across a 7-layer memory architecture. TypeScript, dual ESM/CJS,
+> tree-shakeable. Apache-2.0.
+
+ZenBrain is not a vector database with a memory label — it is a set of
+principled, cited, inspectable algorithms for how memory should behave over
+time: what to strengthen, what to forget, and how confident to be. The open
+package (`@zensation/algorithms` + `@zensation/core`) ships 20 algorithm
+modules (10 core + 10 advanced) plus a `MemoryCoordinator` orchestrating the
+seven layers (Working, Short-Term, Episodic, Semantic, Procedural, Core,
+Cross-Context).
+
+## Docs
+
+- [README](https://github.com/zensation-ai/zenbrain/blob/main/README.md): overview, comparison to Mem0/Letta/Zep, quick start, all 20 algorithms with runnable snippets.
+- [Architecture](https://github.com/zensation-ai/zenbrain/blob/main/docs/architecture.md): the 7-layer memory model and how data flows between layers.
+- [API Reference](https://github.com/zensation-ai/zenbrain/blob/main/docs/api-reference.md): full function signatures per module.
+- [FAQ](https://github.com/zensation-ai/zenbrain/blob/main/docs/FAQ.md): common questions and design-decision rationale.
+- [Benchmarks](https://github.com/zensation-ai/zenbrain/blob/main/docs/benchmarks.md): FSRS vs. SM-2 retention accuracy and related results.
+- [Roadmap](https://github.com/zensation-ai/zenbrain/blob/main/docs/ROADMAP.md): released versions and planned/exploratory directions.
+- [Getting Started](https://github.com/zensation-ai/zenbrain/blob/main/docs/getting-started.md): install and first steps.
+- [AGENTS.md](https://github.com/zensation-ai/zenbrain/blob/main/AGENTS.md): conventions for coding agents contributing to this repo (project map, non-negotiables, test commands).
+
+## Examples
+
+- [Basic chatbot](https://github.com/zensation-ai/zenbrain/blob/main/examples/basic-chatbot.ts)
+- [LangChain integration](https://github.com/zensation-ai/zenbrain/blob/main/examples/with-langchain.ts)
+- [CrewAI integration](https://github.com/zensation-ai/zenbrain/blob/main/examples/with-crewai.ts)
+- [Vercel AI SDK integration](https://github.com/zensation-ai/zenbrain/blob/main/examples/with-vercel-ai.ts)
+- [Claude integration](https://github.com/zensation-ai/zenbrain/blob/main/examples/with-claude.ts)
+- [Live in-browser playground](https://zensation.ai/en/playground): runs the published code with no install.
+
+## Packages
+
+- [`@zensation/algorithms`](https://www.npmjs.com/package/@zensation/algorithms): the 20 zero-dependency algorithm modules, usable standalone.
+- [`@zensation/core`](https://www.npmjs.com/package/@zensation/core): `MemoryCoordinator` + the 7 memory layers, built on `@zensation/algorithms`.
+- `@zensation/adapter-postgres`, `@zensation/adapter-sqlite`: storage adapters for `@zensation/core`.
+
+## Optional
+
+- [Research](https://github.com/zensation-ai/zenbrain#research): arXiv preprint, Zenodo DOI, TDCommons technical disclosure, BibTeX citation.
+- [Contributing](https://github.com/zensation-ai/zenbrain/blob/main/CONTRIBUTING.md): how to open issues and PRs.
+- [Changelog](https://github.com/zensation-ai/zenbrain/blob/main/CHANGELOG.md): release history.
