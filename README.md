@@ -15,7 +15,7 @@
   <a href="https://doi.org/10.5281/zenodo.19353663"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.19353663.svg" alt="DOI"></a>
   <a href="https://arxiv.org/abs/2604.23878"><img src="https://img.shields.io/badge/arXiv-2604.23878-b31b1b.svg" alt="arXiv"></a>
   <a href="https://orcid.org/0009-0001-1793-012X"><img src="https://img.shields.io/badge/ORCID-0009--0001--1793--012X-A6CE39?logo=orcid&logoColor=white" alt="ORCID"></a>
-  <a href="https://huggingface.co/alexanderbering/zenbrain"><img src="https://img.shields.io/badge/%F0%9F%A4%97_HuggingFace-Model_Card-yellow" alt="HuggingFace"></a>
+  <a href="https://huggingface.co/zensation-ai/zenbrain"><img src="https://img.shields.io/badge/%F0%9F%A4%97_HuggingFace-Model_Card-yellow" alt="HuggingFace"></a>
   <a href="https://discord.gg/YKVTHaXK"><img src="https://img.shields.io/discord/1485937855447695443?color=7289da&label=Discord&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://x.com/zensationai"><img src="https://img.shields.io/twitter/follow/zensationai?style=social" alt="Follow on X"></a>
 </p>
@@ -24,6 +24,10 @@
 
 <p align="center">
   <img src="docs/demo.gif" alt="ZenBrain Playground Demo" width="700"/>
+</p>
+
+<p align="center">
+  <strong><a href="https://zensation.ai/en/playground">▶ Try the live playground in your browser</a></strong> — runs this published code, no install required.
 </p>
 
 <details>
@@ -370,7 +374,7 @@ ZenBrain's architecture and algorithms are documented in an open-access technica
 
 - **Paper:** [ZenBrain: A Neuroscience-Inspired 7-Layer Memory Architecture for Autonomous AI Systems](https://doi.org/10.5281/zenodo.19353663) (Zenodo, DOI: [10.5281/zenodo.19353663](https://doi.org/10.5281/zenodo.19353663) — resolves to the latest version)
 - **TDCommons:** [Technical Disclosure](https://www.tdcommons.org/dpubs_series/9683) (CC BY 4.0)
-- **HuggingFace:** [Model Card & Benchmarks](https://huggingface.co/alexanderbering/zenbrain)
+- **HuggingFace:** [Model Card & Benchmarks](https://huggingface.co/zensation-ai/zenbrain)
 
 If you use ZenBrain in academic work, please cite:
 
